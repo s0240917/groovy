@@ -21,15 +21,14 @@ agent any
                          timeout(time: 2, unit: "MINUTES")
                          }
                     steps{
-                      echo " some tests execution here"
-<<<<<<< HEAD
+                      echo " some tests execution here "
                       sh 'printf "\\e[31Some tests execution here.... \\e[0m\\n"'
                       }
-=======
+
                       
                     }
->>>>>>> 6d051d5139d8e36a47c503e7636580a8e9e4655f
+
              }
         }       
-}
+
                   
