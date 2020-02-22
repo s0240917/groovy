@@ -59,6 +59,14 @@ agent any
                   }
 
              }
+                 stage(' capturing sh command output'){
+                      environment{
+                          LS = "${sh(script: 'ls -lah', returnStdout: true)}
+                           }
+                    steps{
+                        echo " LS  ${env.LS}"
+                        }
+                    }
         }       
 }
                   
