@@ -65,6 +65,7 @@ agent any
                            }
                     steps{
                         echo " LS  ${env.LS}"
+                        echo "$(date)"
                         }
                     }
         }       
