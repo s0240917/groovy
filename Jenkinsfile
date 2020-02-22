@@ -38,6 +38,24 @@ agent any
                    echo " the build number is ${env.BUILD_NUMBER}"
                    echo " you can also use \${BUILD_NUMBER} -> ${BUILD_NUMBER}"
                    sh 'echo "I can access $BUILD_NUMBER in shell command as well."'
+                   echo "FOO = ${env.FOO}"
+                   echo " FOO = ${FOO}"
+                   
+                   // 2nd way of using variable
+                   
+                   script{
+                      env.TEST = " some varaiable 2nd type defining"
+                      }
+                    echo " TEST varaible = ${TEST}
+
+
+                   // 3rd type to define variable
+
+
+
+                   withEnv(["ENV3= here is 3rd type"]){
+                      echo " ENV3 is = ${ENV3}"
+                     }
                   }
 
              }
