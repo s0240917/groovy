@@ -1,9 +1,9 @@
 pipeline{
 
 agent any
-//      environment{
-//         FOO =bar
-//         }
+      environment{
+         FOO = "bar"
+         }
       options{
              timestamps()
              
