@@ -10,6 +10,7 @@ agent any
               stage('Test'){
                     steps{
                       echo " some tests execution here"
+                      echo 1
                       }
              }
         }       
