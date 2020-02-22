@@ -46,7 +46,7 @@ agent any
                    script{
                       env.TEST = " some varaiable 2nd type defining"
                       }
-                    echo " TEST varaible = ${TEST}
+                    echo " TEST varaible = ${TEST}"
 
 
                    // 3rd type to define variable
