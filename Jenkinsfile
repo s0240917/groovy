@@ -1,12 +1,18 @@
 pipeline{
 
 agent any
+//      environment{
+//         FOO =bar
+//         }
       options{
              timestamps()
              
            }
       stages{
              stage('Build'){
+                  when {
+                      environment name: "FOO", value: "bar"
+                       }
                   options{
                         timeout(time: 1, unit: "MINUTES")
                        }
