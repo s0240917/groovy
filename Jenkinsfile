@@ -34,6 +34,7 @@ agent any
                       
                     }
                stage("Reading Env variables"){
+                   steps{
                    echo " the build number is ${env.BUILD_NUMBER}"
                    echo " you can also use \${BUILD_NUMBER} -> ${BUILD_NUMBER}"
                    sh 'echo "I can access $BUILD_NUMBER in shell command as well."'
@@ -41,5 +42,5 @@ agent any
 
              }
         }       
-
+}
                   
